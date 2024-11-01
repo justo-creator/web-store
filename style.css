@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 1%;
+    align-items: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover{
+    color: orange;
+}
+
+.header-container .logo{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: orange;
+}
+
+.search-bar{
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input[type="text"]{
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    outline: none;
+    border-radius: 18px;
+    font-family: 'outfit', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus{
+    background: pink;
+    color: white;
+}
+
+.search-bar button{
+    padding: 10px 20px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    font-family: 'outfit', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.hero-section{
+   margin: 40px;
+   display: flex;
+   justify-content: space-between;
+   height: 400px;
+   border-radius: 8px;
+   padding: 20px;
+   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+.hero-section h1{
+    font-size: 3rem;
+}
+.hero-section .hero-text{
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.hero-section .btn{
+    padding: 15px 40px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-section .btn:hover{
+    background-color: #f5efef;
+    color: #333;
+}
+
+.hero-section .hero-image img{
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-container{
+  
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.main-container .product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.main-container .product figure {
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.main-container .product figure figcaption .btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .product  .btns button{
+    cursor: pointer;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 2 10px;
+    cursor: pointer;
+}
+
+.main-container .product figure img{
+    width: 200px;
+    height: 100px;
+    mix-blend-mode: multiply;
+}
